@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+
+    >
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:background="@drawable/gmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/emailaddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="77dp"></ImageView>
+
+    <EditText
+        android:id="@+id/emailaddress"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backgroundedit"
+
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:hint="To:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345">
+
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/emailsubject"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backgroundedit"
+        android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+        android:hint="Theme"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/emailaddress"
+        app:layout_constraintVertical_bias="0.157">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backgroundedit"
+        android:drawableLeft="@android:drawable/sym_action_chat"
+        android:hint="Message"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/emailsubject"
+        app:layout_constraintVertical_bias="0.184">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/emailsendbutton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/backgroundedit"
+        android:backgroundTint="@color/red"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="@id/emailtext"
+        app:layout_constraintVertical_bias="0.487"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
